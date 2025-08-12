@@ -1,5 +1,6 @@
 export default function LoginForm(){
     const formulario = document.createElement('form');
+    formulario.className = 'd-flex flex-column'
  
     const email = document.createElement('input');
     email.type = 'email';
@@ -12,10 +13,12 @@ export default function LoginForm(){
     senha.placeholder = "Digite sua senha";
     formulario.appendChild(senha);
  
-    const btnentrar = document.createElement('button');
-    btnentrar.type = 'submit';
-    btnentrar.textContent = "Entrar";
-    formulario.appendChild(btnentrar);
+    const btnAuth = document.createElement('button');
+    btnAuth.type = 'submit';
+    btnAuth.textContent = "Entrar";
+    btnAuth.className = 'btn btn-primary';
+    
+    formulario.appendChild(btnAuth);
 
     return formulario;
 }   

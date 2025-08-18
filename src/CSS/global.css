@@ -13,3 +13,7 @@
     font-weight: 700;
     font-size: 16px;
 }
+
+.btn-primary:hover:active {
+    background-color: #4b0505;
+}

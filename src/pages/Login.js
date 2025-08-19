@@ -8,31 +8,17 @@ export default function renderLoginPage() {
     const navbar = Navbar();
     nav.appendChild(navbar);
 
-    const divRoot = document.getElementById('root');
-    divRoot.innerHTML = '';
-
-    const titulo = document.createElement('h1');
-    titulo.textContent = 'Faça o login';
-    titulo.className = 'titulo';
-    titulo.style.textAlign = 'center';
-    titulo.style.marginBottom = '25px'; 
-
-    const container = document.createElement('div');
-    container.className = 'card p-4 shadow-lg';
-    container.style.width = '100%';
-    container.style.maxWidth = '400px';
-
-    divRoot.appendChild(container);
     const formulario = Form();
 
     const linkVoltar = document.createElement('a');
-    linkVoltar.textContent = "Não tem uma conta? Cadastra-se";
-    linkVoltar.className = '';
-    linkVoltar.href = 'login.html';
-    linkVoltar.style.textAlign = 'center';
-    linkVoltar.style.margin = '10px';
 
-    container.appendChild(titulo); 
-    container.appendChild(formulario);
-    container.appendChild(linkVoltar);
+    linkVoltar.textContent = "Não possui uma conta? Cadastre-se";
+    linkVoltar.href = '#/register';
+    linkVoltar.style.textAlign = 'center';
+    linkVoltar.style.fontSize = '16px';
+    linkVoltar.style.padding = '15px';
+
+    const contentForm = formulario.querySelector('form');
+    contentForm.insertBefore(linkVoltar, contentForm.children[3]);
+
 }

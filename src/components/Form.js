@@ -6,6 +6,7 @@ export default function Form(){
     const container = document.createElement('div');
     container.className = 'card p-4 shadow-lg';
     container.style.width = '100%';
+<<<<<<< Updated upstream
     container.style.maxWidth = '500px';
     divRoot.appendChild(container);
 
@@ -17,18 +18,27 @@ export default function Form(){
     titulo.style.fontSize = '30px';
     container.appendChild(titulo); 
 
+=======
+    container.style.maxWidth = '400px';
+    divRoot.appendChild(container);
+
+    const titulo = document.createElement('h1');
+    titulo.textContent = 'Faça seu Login';
+    titulo.className = 'titulo';
+>>>>>>> Stashed changes
     const formulario = document.createElement('form');
     formulario.className = 'd-flex flex-column';
-
     const email = document.createElement('input');
     email.type = 'email';
     email.placeholder = "Digite seu e-mail";
     formulario.appendChild(email);
-
     const senha = document.createElement('input');
     senha.type = 'password';
     senha.placeholder = "Digite sua senha";
     formulario.appendChild(senha);
+    titulo.style.marginBottom = '25px';
+    container.appendChild(titulo); 
+    titulo.style.textAlign = 'center';
 
     const btn = document.createElement('button');
     btn.type = 'submit';

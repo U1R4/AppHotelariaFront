@@ -1,3 +1,4 @@
+ 
 import Form from "../components/Form.js";
 import Navbar from "../components/Navbar.js";
 
@@ -12,6 +13,11 @@ export default function renderRegisterPage() {
 
     const titulo = formulario.querySelector('h1');
     titulo.textContent = "Cadastre-se";
+<<<<<<< Updated upstream
+=======
+
+    const contentForm = formulario.querySelector('form');
+>>>>>>> Stashed changes
 
     const btnRegister = formulario.querySelector('button');
     btnRegister.textContent = 'Cadastrar';
@@ -27,13 +33,39 @@ export default function renderRegisterPage() {
     nome.placeholder = "Digite seu nome";
 
     const inputEmail = formulario.querySelector('input[type="email"]');
+<<<<<<< Updated upstream
     contentForm.insertBefore(nome, inputEmail);
+=======
+
+    contentForm.insertBefore(nome, inputEmail);
+
+>>>>>>> Stashed changes
 
     const conSenha = document.createElement('input');
     conSenha.type = 'password';
     conSenha.placeholder = "Confirme sua senha";
+<<<<<<< Updated upstream
 
     contentForm.insertBefore(conSenha, contentForm.children[3]);
 
 
+=======
+    
+    contentForm.insertBefore(conSenha, contentForm.children[3])
+
+
+    const btnRegister =formulario.querySelector('button');
+    btnRegister.textContent = "Criar conta";
+    
+    
+    const linkVoltar = document.createElement('a');
+    linkVoltar.textContent = "Voltar a login";
+    linkVoltar.className = '';
+    linkVoltar.href = 'login.html';
+    linkVoltar.style.textAlign = 'center';
+    linkVoltar.style.fontSize = '12px';
+    linkVoltar.style.margin = '15px';
+
+    contentForm.appendChild(linkVoltar);
+>>>>>>> Stashed changes
 }

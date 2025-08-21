@@ -7,6 +7,7 @@ export default function renderLoginPage() {
     
     const navbar = Navbar();
     nav.appendChild(navbar);
+<<<<<<< Updated upstream
 
     const formulario = Form();
 
@@ -21,4 +22,8 @@ export default function renderLoginPage() {
     const contentForm = formulario.querySelector('form');
     contentForm.insertBefore(linkVoltar, contentForm.children[3]);
 
+=======
+    
+    Form();
+>>>>>>> Stashed changes
 }

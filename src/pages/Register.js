@@ -14,7 +14,12 @@ export default function renderRegisterPage() {
     const titulo = formulario.querySelector('h1');
     titulo.textContent = "Cadastre-se";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+
+    const contentForm = formulario.querySelector('form');
+>>>>>>> Stashed changes
 
     const contentForm = formulario.querySelector('form');
 >>>>>>> Stashed changes
@@ -34,7 +39,13 @@ export default function renderRegisterPage() {
 
     const inputEmail = formulario.querySelector('input[type="email"]');
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     contentForm.insertBefore(nome, inputEmail);
+=======
+
+    contentForm.insertBefore(nome, inputEmail);
+
+>>>>>>> Stashed changes
 =======
 
     contentForm.insertBefore(nome, inputEmail);
@@ -45,6 +56,7 @@ export default function renderRegisterPage() {
     conSenha.type = 'password';
     conSenha.placeholder = "Confirme sua senha";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     contentForm.insertBefore(conSenha, contentForm.children[3]);
 
@@ -53,6 +65,11 @@ export default function renderRegisterPage() {
     
     contentForm.insertBefore(conSenha, contentForm.children[3])
 
+=======
+    
+    contentForm.insertBefore(conSenha, contentForm.children[3])
+
+>>>>>>> Stashed changes
 
     const btnRegister =formulario.querySelector('button');
     btnRegister.textContent = "Criar conta";
@@ -67,5 +84,8 @@ export default function renderRegisterPage() {
     linkVoltar.style.margin = '15px';
 
     contentForm.appendChild(linkVoltar);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }

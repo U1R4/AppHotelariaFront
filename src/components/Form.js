@@ -7,6 +7,7 @@ export default function Form(){
     container.className = 'card p-4 shadow-lg';
     container.style.width = '100%';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     container.style.maxWidth = '500px';
     divRoot.appendChild(container);
 
@@ -18,6 +19,14 @@ export default function Form(){
     titulo.style.fontSize = '30px';
     container.appendChild(titulo); 
 
+=======
+    container.style.maxWidth = '400px';
+    divRoot.appendChild(container);
+
+    const titulo = document.createElement('h1');
+    titulo.textContent = 'Faça seu Login';
+    titulo.className = 'titulo';
+>>>>>>> Stashed changes
 =======
     container.style.maxWidth = '400px';
     divRoot.appendChild(container);

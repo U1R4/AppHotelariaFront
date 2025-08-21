@@ -2,6 +2,7 @@ import renderLoginPage from "./pages/Login.js";
 import renderRegisterPage from "./pages/Register.js"; 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 const routes = {
     "/login": renderLoginPage,
     "/register": renderRegisterPage
@@ -21,6 +22,8 @@ function renderRoutes() {
 
 window.addEventListener('hashchange', renderRoutes);
 =======
+=======
+>>>>>>> Stashed changes
 
 const routes = {
     "/login": renderLoginPage,
@@ -39,6 +42,9 @@ function renderRoutes(){
 };
 
 window.addEventListener("hashchange", renderRoutes);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 document.addEventListener('DOMContentLoaded', renderRoutes);

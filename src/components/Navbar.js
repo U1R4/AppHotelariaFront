@@ -28,21 +28,11 @@ export default function Navbar() {
                 </ul>
                 </li>
                 <li class="nav-item">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                <a class="nav-link" aria-disabled="true">Disabled</a>
-=======
-=======
->>>>>>> Stashed changes
                 <a class="nav-link" href="#/register">Cadastre-se</a>
                 </li>
 
                 <li class="nav-item">
                 <a class="nav-link" href="#/login">Login</a>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
                 </li>
             </ul>
             <form class="d-flex" role="search">

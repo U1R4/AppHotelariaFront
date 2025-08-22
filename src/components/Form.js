@@ -6,55 +6,35 @@ export default function Form(){
     const container = document.createElement('div');
     container.className = 'card p-4 shadow-lg';
     container.style.width = '100%';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    container.style.maxWidth = '500px';
+    container.style.maxWidth = '360px';
     divRoot.appendChild(container);
 
     const titulo = document.createElement('h1');
-    titulo.textContent = 'Faça seu login';
+    titulo.textContent = 'Crie uma conta';
     titulo.className = 'titulo';
     titulo.style.textAlign = 'center';
     titulo.style.marginBottom = '25px';
-    titulo.style.fontSize = '30px';
     container.appendChild(titulo); 
 
-=======
-    container.style.maxWidth = '400px';
-    divRoot.appendChild(container);
-
-    const titulo = document.createElement('h1');
-    titulo.textContent = 'Faça seu Login';
-    titulo.className = 'titulo';
->>>>>>> Stashed changes
-=======
-    container.style.maxWidth = '400px';
-    divRoot.appendChild(container);
-
-    const titulo = document.createElement('h1');
-    titulo.textContent = 'Faça seu Login';
-    titulo.className = 'titulo';
->>>>>>> Stashed changes
     const formulario = document.createElement('form');
     formulario.className = 'd-flex flex-column';
+
     const email = document.createElement('input');
     email.type = 'email';
     email.placeholder = "Digite seu e-mail";
     formulario.appendChild(email);
+
     const senha = document.createElement('input');
     senha.type = 'password';
     senha.placeholder = "Digite sua senha";
     formulario.appendChild(senha);
-    titulo.style.marginBottom = '25px';
-    container.appendChild(titulo); 
-    titulo.style.textAlign = 'center';
 
-    const btn = document.createElement('button');
-    btn.type = 'submit';
-    btn.textContent = "Entrar";
-    btn.className = 'btn btn-primary';
-    btn.style.fontSize = '18px';
-    formulario.appendChild(btn);
+    const btnAuth = document.createElement('button');
+    btnAuth.type = 'submit';
+    btnAuth.textContent = "Entrar";
+    btnAuth.className = 'btn btn-primary';
+    btnAuth.style.fontWeight = '16px';
+    formulario.appendChild(btnAuth);
 
     container.appendChild(formulario);
     return divRoot;

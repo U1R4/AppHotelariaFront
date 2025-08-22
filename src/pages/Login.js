@@ -7,14 +7,12 @@ export default function renderLoginPage() {
     
     const navbar = Navbar();
     nav.appendChild(navbar);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 
     const formulario = Form();
 
     const linkVoltar = document.createElement('a');
 
-    linkVoltar.textContent = "Não possui uma conta? Cadastre-se";
+    linkVoltar.textContent = "Não possui uma conta? Crie uma!";
     linkVoltar.href = '#/register';
     linkVoltar.style.textAlign = 'center';
     linkVoltar.style.fontSize = '16px';
@@ -22,13 +20,6 @@ export default function renderLoginPage() {
 
     const contentForm = formulario.querySelector('form');
     contentForm.insertBefore(linkVoltar, contentForm.children[3]);
-
-=======
     
-    Form();
->>>>>>> Stashed changes
-=======
     
-    Form();
->>>>>>> Stashed changes
 }
